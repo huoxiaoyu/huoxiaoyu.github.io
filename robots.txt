@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://huoxiaoyu.github.io/sitemap.xml 
