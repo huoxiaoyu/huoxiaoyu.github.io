@@ -4,7 +4,7 @@
   <title><![CDATA[Xiaoyuhuo de blog]]></title>
   <link href="http://huoxiaoyu.github.io/atom.xml" rel="self"/>
   <link href="http://huoxiaoyu.github.io/"/>
-  <updated>2017-03-18T17:24:05+01:00</updated>
+  <updated>2017-03-18T18:00:50+01:00</updated>
   <id>http://huoxiaoyu.github.io/</id>
   <author>
     <name><![CDATA[Xiaoyu Huo]]></name>
@@ -30,31 +30,15 @@
 
 <p>Some information is already good listed on the website, if you wanna copy them into the Excel sheets, one simply way is to use the &ldquo;Text Import Wizard&rdquo;, but if you will run it several times, I think it&rsquo;s better to run a little macro. Here I give an example that I meet almost everyday.</p>
 
-<p>In case my ideal output in such beautiful way as following
-|Id|Addresse
-|&mdash;|&mdash;|
-1|Berlin - Wilmersdorfer Arcaden
-2|Berlin - Eastgate
-3|Berlin - Tauentzienstrasse
-4|Berlin - Ring-Center
-5|Berlin Alexa</p>
+<p>In case my ideal output in such beautiful way as following</p>
+
+<p><img src="http://huoxiaoyu.github.io/images/screenshot1.png"></p>
 
 <p>However if I directly paste the online-information, it may shows in following way. The number before seems cool but better to split and write in other cell.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>1<span class="o">)</span>Berlin - Wilmersdorfer Arcaden
-</span><span class='line'>2<span class="o">)</span>Berlin - Eastgate
-</span><span class='line'>3<span class="o">)</span>Berlin - Tauentzienstrasse
-</span><span class='line'>4<span class="o">)</span>Berlin - Ring-Center
-</span><span class='line'>5<span class="o">)</span>Berlin Alexa
-</span></code></pre></td></tr></table></div></figure>
+<p><img src="http://huoxiaoyu.github.io/images/ss314_2.png"></p>
 
-
-<p>So I decided to write one macro to deal with it in second. One possible way is a subtine named &ldquo;delNum&rdquo;</p>
+<p>So I decided to write one macro to deal with it in second. One possible way is a subtine named <code>delNum</code></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -93,11 +77,15 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Note
-- X is an object, so &ldquo;set&rdquo; is necessary to give value to X
-- 438 error may occur, if you might write &ldquo;ranges&rdquo; instead of &ldquo;range&rdquo; or &ldquo;cell&rdquo; instead of &ldquo;cells&rdquo;
-- array=split(string, &ldquo;sep_simbol&rdquo;), and count from 0 in VBA
-- &ldquo;conV&rdquo; better to define as a Variant</p>
+<p>Note</p>
+
+<ul>
+<li>X is an object, so &ldquo;set&rdquo; is necessary to give value to X</li>
+<li>438 error may occur, if you might write &ldquo;ranges&rdquo; instead of &ldquo;range&rdquo; or &ldquo;cell&rdquo; instead of &ldquo;cells&rdquo;</li>
+<li>array=split(string, &ldquo;sep_simbol&rdquo;), and count from 0 in VBA</li>
+<li>&ldquo;conV&rdquo; better to define as a Variant</li>
+</ul>
+
 
 <p>Of course, if you regret to delete the bullets，the following could help to recover it.</p>
 
